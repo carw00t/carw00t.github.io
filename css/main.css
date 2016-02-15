@@ -618,3 +618,6 @@ pre {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+.container {
+  max-width: 900px; }
