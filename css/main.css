@@ -2,7 +2,8 @@
   color: #7b7c7b; }
 
 .menu-button {
-  color: #67cbdc; }
+  color: #67cbdc;
+  font-size: 16px; }
 
 .hoshi-header {
   background-image: url("/assets/bookshelfblue.png");
@@ -45,7 +46,8 @@
   color: #363635; }
 
 .hoshi-home-description {
-  color: #bbbcba; }
+  color: #bbbcba;
+  font-size: 17px; }
   .hoshi-home-description:first-line {
     color: #7b7c7b; }
 
@@ -67,9 +69,8 @@
     margin-left: auto;
     margin-right: auto; } }
 
-@media (max-width: 768px) {
-  .audiobook-image {
-    width: 250px; } }
+.audiobook-image {
+  width: 130px; }
 
 @media (max-width: 768px) {
   .center-text-up-to-sm {
