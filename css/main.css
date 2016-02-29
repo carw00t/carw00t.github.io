@@ -1,18 +1,27 @@
 .container {
+  font-family: 'Montserrat', sans-serif; }
+
+.container {
   color: #7b7c7b; }
 
 .menu-button {
   color: #67cbdc;
   font-size: 16px; }
+  .menu-button:hover {
+    color: #3ca3b4; }
 
 .hoshi-header {
-  background-image: url("/assets/bookshelfblue.png");
   color: white;
-  font-size: 6rem; }
+  font-size: 6rem;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-image: url("/assets/bookshelfblue.png");
+  background-repeat: no-repeat;
+  background-position: center; }
   .hoshi-header p {
     color: white; }
   .hoshi-header img {
-    width: 50px; }
+    width: 80%; }
 
 .link-no-style {
   color: inherit;
@@ -23,18 +32,12 @@
 .grey-background {
   background-color: #f2f1f1; }
 
+.blue-background {
+  background-color: #67cbdc; }
+
 .center-block {
   float: none !important; }
 
-.text-first-line-bold:first-line {
-  font-weight: 700; }
-
-/*
-.align-vertical-center {
-	display: flex;
-	align-items: center;
-}
-*/
 .text-hoshi-section-title {
   color: #67cbdc;
   font-size: 2rem; }
@@ -45,11 +48,35 @@
 .text-dark-grey {
   color: #363635; }
 
+a.footer-link-dark-grey div {
+  color: #7b7c7b; }
+
+.text-light-grey {
+  color: #bbbcba; }
+
+.container a {
+  color: #67cbdc; }
+
+.container a:visited {
+  color: #468D99; }
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
+  text-decoration: none; }
+
 .hoshi-home-description {
   color: #bbbcba;
   font-size: 17px; }
   .hoshi-home-description:first-line {
     color: #7b7c7b; }
+
+.container .hoshi-home-description-container {
+  margin-top: 20px; }
+  @media (min-width: 768px) {
+    .container .hoshi-home-description-container {
+      margin-top: 40px; } }
+  @media (min-width: 992px) {
+    .container .hoshi-home-description-container {
+      margin-top: 80px; } }
 
 .hoshi-center-image {
   display: block;
@@ -76,6 +103,9 @@
   .center-text-up-to-sm {
     text-align: center; } }
 
+.center-text {
+  text-align: center; }
+
 .mobile-ebook-description .ebook-description {
   max-height: 0;
   overflow: hidden; }
@@ -89,6 +119,9 @@
 @media (min-width: 768px) {
   .desktop-ebook-description .show-ebook-description {
     max-height: 5000px; } }
+
+.ebook-page-image {
+  width: 80%; }
 
 .mt-xs {
   margin-top: 8px; }
