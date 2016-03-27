@@ -1,5 +1,6 @@
 .container {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; }
 
 .container {
   color: #7b7c7b; }
@@ -21,7 +22,7 @@
   .hoshi-header p {
     color: white; }
   .hoshi-header img {
-    width: 80%; }
+    width: 60%; }
 
 .link-no-style {
   color: inherit;
@@ -48,35 +49,41 @@
 .text-dark-grey {
   color: #363635; }
 
-a.footer-link-dark-grey div {
-  color: #7b7c7b; }
-
 .text-light-grey {
   color: #bbbcba; }
 
-.container a {
-  color: #67cbdc; }
+.text-white {
+  color: white; }
 
+.container a.link-no-style:visited {
+  color: #67cbdc; }
 .container a:visited {
   color: #468D99; }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
   text-decoration: none; }
 
-.hoshi-home-description {
-  color: #bbbcba;
-  font-size: 17px; }
-  .hoshi-home-description:first-line {
-    color: #7b7c7b; }
+.warp-to-top {
+  position: fixed;
+  width: 36px;
+  height: 36px;
+  right: 10px;
+  bottom: 10px;
+  z-index: 1000;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #67cbdc; }
 
-.container .hoshi-home-description-container {
-  margin-top: 20px; }
-  @media (min-width: 768px) {
-    .container .hoshi-home-description-container {
-      margin-top: 40px; } }
-  @media (min-width: 992px) {
-    .container .hoshi-home-description-container {
-      margin-top: 80px; } }
+.home-book img {
+  height: 190px; }
+
+.home .container {
+  margin-top: 70px;
+  margin-bottom: 80px; }
+
+.hoshi-home-description {
+  color: #7b7c7b;
+  width: 88%; }
 
 .hoshi-center-image {
   display: block;
@@ -105,20 +112,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
 
 .center-text {
   text-align: center; }
-
-.mobile-ebook-description .ebook-description {
-  max-height: 0;
-  overflow: hidden; }
-@media (max-width: 767px) {
-  .mobile-ebook-description .show-ebook-description {
-    max-height: 5000px; } }
-
-.desktop-ebook-description .ebook-description {
-  max-height: 0;
-  overflow: hidden; }
-@media (min-width: 768px) {
-  .desktop-ebook-description .show-ebook-description {
-    max-height: 5000px; } }
 
 .ebook-page-image {
   width: 80%; }
@@ -159,22 +152,26 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
 .mb-xxl {
   margin-bottom: 48px; }
 
-.mr-xs {
+@media (min-width: 769px) {
+  .mb-only-small {
+    margin-bottom: 0px; } }
+
+.ml-xs {
   margin-right: 8px; }
 
-.mr-sm {
+.ml-sm {
   margin-right: 16px; }
 
-.mr-md {
+.ml-md {
   margin-right: 24px; }
 
-.mr-lg {
+.ml-lg {
   margin-right: 32px; }
 
-.mr-xl {
+.ml-xl {
   margin-right: 40px; }
 
-.mr-xxl {
+.ml-xxl {
   margin-right: 48px; }
 
 .mr-xs {
