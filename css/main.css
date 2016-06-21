@@ -1,6 +1,14 @@
 .container {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px; }
+  .container p {
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    color: #5c5c5c; }
+
+.hoshi-page-header {
+  margin-top: 79px;
+  margin-bottom: 50px; }
 
 .container {
   color: #7b7c7b; }
@@ -10,6 +18,10 @@
   font-size: 16px; }
   .menu-button:hover {
     color: #3ca3b4; }
+  .menu-button:visited {
+    color: #67cbdc; }
+  .menu-button .selected {
+    border-bottom: 2px solid #67cbdc; }
 
 .hoshi-header {
   color: white;
@@ -24,12 +36,6 @@
   .hoshi-header img {
     width: 60%; }
 
-.link-no-style {
-  color: inherit;
-  text-decoration: none; }
-  .link-no-style:hover {
-    text-decoration: none; }
-
 .grey-background {
   background-color: #f2f1f1; }
 
@@ -41,7 +47,8 @@
 
 .text-hoshi-section-title {
   color: #67cbdc;
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-weight: 700; }
 
 .text-light-blue {
   color: #67cbdc; }
@@ -55,13 +62,22 @@
 .text-white {
   color: white; }
 
-.container a.link-no-style:visited {
+.link-no-style {
+  color: inherit;
+  text-decoration: none; }
+  .link-no-style:hover {
+    text-decoration: none; }
+
+.container a.link-no-style:visited, .container a.link-no-style {
   color: #67cbdc; }
 .container a:visited {
   color: #468D99; }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
   text-decoration: none; }
+
+h2, h3 {
+  text-transform: uppercase; }
 
 .warp-to-top {
   position: fixed;
@@ -72,18 +88,29 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
   z-index: 1000;
   text-align: center;
   border-radius: 50%;
-  background-color: #67cbdc; }
+  border: 2px solid lightgrey; }
 
 .home-book img {
-  height: 190px; }
+  width: 66%; }
 
-.home .container {
+.home-row {
   margin-top: 70px;
   margin-bottom: 80px; }
 
 .hoshi-home-description {
   color: #7b7c7b;
   width: 88%; }
+
+/*
+this is to get text vertical centering to work
+*/
+.hoshi-home-first-row {
+  height: 230px;
+  display: flex;
+  align-items: center; }
+  @media (max-width: 768px) {
+    .hoshi-home-first-row {
+      height: auto; } }
 
 .hoshi-center-image {
   display: block;
@@ -104,7 +131,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
     margin-right: auto; } }
 
 .audiobook-image {
-  width: 130px; }
+  width: 66%; }
 
 @media (max-width: 768px) {
   .center-text-up-to-sm {
@@ -114,7 +141,10 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
   text-align: center; }
 
 .ebook-page-image {
-  width: 80%; }
+  width: 66%; }
+
+.multimedia-image {
+  width: 66%; }
 
 .mt-xs {
   margin-top: 8px; }
@@ -126,13 +156,13 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
   margin-top: 24px; }
 
 .mt-lg {
-  margin-top: 32px; }
+  margin-top: 48px; }
 
 .mt-xl {
-  margin-top: 40px; }
+  margin-top: 64px; }
 
 .mt-xxl {
-  margin-top: 48px; }
+  margin-top: 80px; }
 
 .mb-xs {
   margin-bottom: 8px; }
@@ -144,15 +174,15 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
   margin-bottom: 24px; }
 
 .mb-lg {
-  margin-bottom: 32px; }
-
-.mb-xl {
-  margin-bottom: 40px; }
-
-.mb-xxl {
   margin-bottom: 48px; }
 
-@media (min-width: 769px) {
+.mb-xl {
+  margin-bottom: 64px; }
+
+.mb-xxl {
+  margin-bottom: 80px; }
+
+@media (min-width: 768px) {
   .mb-only-small {
     margin-bottom: 0px; } }
 
@@ -166,13 +196,13 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
   margin-right: 24px; }
 
 .ml-lg {
-  margin-right: 32px; }
+  margin-right: 48px; }
 
 .ml-xl {
-  margin-right: 40px; }
+  margin-right: 64px; }
 
 .ml-xxl {
-  margin-right: 48px; }
+  margin-right: 80px; }
 
 .mr-xs {
   margin-right: 8px; }
@@ -184,13 +214,13 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
   margin-right: 24px; }
 
 .mr-lg {
-  margin-right: 32px; }
+  margin-right: 48px; }
 
 .mr-xl {
-  margin-right: 40px; }
+  margin-right: 64px; }
 
 .mr-xxl {
-  margin-right: 48px; }
+  margin-right: 80px; }
 
 /**
  * Reset some basic elements
