@@ -1,17 +1,20 @@
 .container {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px; }
-  .container p {
+  font-size: 16px;
+  color: #7b7c7b;
+  max-width: 900px; }
+  .container p, .container li {
     font-family: 'Source Sans Pro';
     font-weight: 400;
     color: #5c5c5c; }
+  .container a.link-no-style:visited, .container a.link-no-style {
+    color: #67cbdc; }
+  .container a:visited {
+    color: #468D99; }
 
 .hoshi-page-header {
   margin-top: 79px;
   margin-bottom: 50px; }
-
-.container {
-  color: #7b7c7b; }
 
 .menu-button {
   color: #67cbdc;
@@ -68,11 +71,6 @@
   .link-no-style:hover {
     text-decoration: none; }
 
-.container a.link-no-style:visited, .container a.link-no-style {
-  color: #67cbdc; }
-.container a:visited {
-  color: #468D99; }
-
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
   text-decoration: none; }
 
@@ -121,14 +119,33 @@ this is to get text vertical centering to work
   cursor: pointer; }
 
 .book-list-image {
-  height: 230px;
-  width: auto; }
+  height: auto;
+  width: 100%; }
 
-@media (max-width: 768px) {
-  .book-list-text {
-    width: 150px;
-    margin-left: auto;
-    margin-right: auto; } }
+.book-card {
+  width: 110px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: lightgrey;
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+  font-size: 13px; }
+  .book-card .book-title {
+    color: #424242;
+    line-height: 1.1; }
+  .book-card .book-author {
+    line-height: 1.1;
+    margin-top: 3px; }
+
+.book-list-text {
+  padding-top: 5px;
+  padding-bottom: 8px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-width: 1px;
+  border-color: lightgrey;
+  border-top-style: solid; }
 
 .audiobook-image {
   width: 66%; }
@@ -141,7 +158,7 @@ this is to get text vertical centering to work
   text-align: center; }
 
 .ebook-page-image {
-  width: 66%; }
+  margin-top: 5px; }
 
 .multimedia-image {
   width: 66%; }
@@ -679,6 +696,3 @@ pre {
     color: #008080; }
   .highlight .il {
     color: #099; }
-
-.container {
-  max-width: 900px; }
