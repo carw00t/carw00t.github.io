@@ -3,7 +3,7 @@
   font-size: 16px;
   color: #7b7c7b;
   max-width: 900px; }
-  .container p, .container li {
+  .container p, .container li, .container td, .container span {
     font-family: 'Source Sans Pro';
     font-weight: 400;
     color: #5c5c5c; }
@@ -86,7 +86,7 @@ h2, h3 {
   z-index: 1000;
   text-align: center;
   border-radius: 50%;
-  border: 2px solid lightgrey; }
+  border: 2px solid #aaa; }
 
 .home-book img {
   width: 66%; }
@@ -157,11 +157,23 @@ this is to get text vertical centering to work
 .center-text {
   text-align: center; }
 
+.text-low-impact {
+  font-size: 14px; }
+
 .ebook-page-image {
   margin-top: 5px; }
 
 .multimedia-image {
   width: 66%; }
+
+.japanese-books-container {
+  height: 208px; }
+
+.audiobook-details-table {
+  border-spacing: 10px 0px;
+  border-collapse: separate; }
+  .audiobook-details-table .book-range-col {
+    text-align: right; }
 
 .mt-xs {
   margin-top: 8px; }
