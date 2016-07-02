@@ -13,6 +13,8 @@
     color: #468D99; }
 
 .hoshi-page-header {
+  font-family: 'Montserrat', sans-serif;
+  color: #7b7c7b;
   margin-top: 79px;
   margin-bottom: 50px; }
 
@@ -174,6 +176,11 @@ this is to get text vertical centering to work
   border-collapse: separate; }
   .audiobook-details-table .book-range-col {
     text-align: right; }
+
+.container .author-left-col {
+  padding-right: 40px; }
+.container .author-right-col {
+  padding-left: 40px; }
 
 .mt-xs {
   margin-top: 8px; }
