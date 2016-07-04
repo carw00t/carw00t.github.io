@@ -79,6 +79,9 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
 h2, h3 {
   text-transform: uppercase; }
 
+.text-caps {
+  text-transform: uppercase; }
+
 .warp-to-top {
   position: fixed;
   width: 36px;
@@ -125,20 +128,23 @@ this is to get text vertical centering to work
   width: 100%; }
 
 .book-card {
-  width: 110px;
+  max-width: 121px;
   border-width: 1px;
   border-style: solid;
   border-radius: 3px;
   border-color: lightgrey;
   font-family: 'Source Sans Pro';
-  font-weight: 400;
+  font-weight: 400; }
+
+.book-title {
+  color: #424242 !important;
+  line-height: 1.1;
   font-size: 13px; }
-  .book-card .book-title {
-    color: #424242;
-    line-height: 1.1; }
-  .book-card .book-author {
-    line-height: 1.1;
-    margin-top: 3px; }
+
+.book-author {
+  line-height: 1.1;
+  margin-top: 3px;
+  font-size: 13px; }
 
 .book-list-text {
   padding-top: 5px;
@@ -168,9 +174,6 @@ this is to get text vertical centering to work
 .multimedia-image {
   width: 66%; }
 
-.japanese-books-container {
-  height: 208px; }
-
 .audiobook-details-table {
   border-spacing: 10px 0px;
   border-collapse: separate; }
@@ -190,7 +193,8 @@ this is to get text vertical centering to work
 
 .site-map {
   font-family: 'Source Sans Pro';
-  color: #5c5c5c; }
+  color: #5c5c5c;
+  font-size: 14px; }
   .site-map a, .site-map a:visited {
     color: #fff; }
   .site-map .site-map-page {
