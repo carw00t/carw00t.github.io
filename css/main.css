@@ -137,14 +137,10 @@ this is to get text vertical centering to work
   font-weight: 400; }
 
 .book-title {
-  color: #424242 !important;
-  line-height: 1.1;
-  font-size: 13px; }
+  color: #424242 !important; }
 
 .book-author {
-  line-height: 1.1;
-  margin-top: 3px;
-  font-size: 13px; }
+  margin-top: 3px; }
 
 .book-list-text {
   padding-top: 5px;
@@ -153,7 +149,9 @@ this is to get text vertical centering to work
   padding-left: 10px;
   border-width: 1px;
   border-color: lightgrey;
-  border-top-style: solid; }
+  border-top-style: solid;
+  font-size: 13px;
+  line-height: 1.1; }
 
 .audiobook-image {
   width: 66%; }
